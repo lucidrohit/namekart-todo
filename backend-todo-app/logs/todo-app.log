@@ -1,0 +1,73 @@
+2025-01-29T13:55:27.357+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-29T13:55:27.357+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-29T13:55:27.357+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-01-29T13:55:27.357+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-01-29T13:55:27.358+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-01-29T13:55:27.361+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a5ed225
+2025-01-29T13:55:27.362+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@408d12fc
+2025-01-29T13:55:27.362+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-01-29T13:55:27.363+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-01-29T13:55:27.370+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/todos", parameters={}
+2025-01-29T13:55:27.378+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.lucidrohit.todo_app.controllers.TodoController#createTodo(TodoDTO)
+2025-01-29T13:55:27.389+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:55:27.442+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TodoDTO(id=null, title=Lunch, description=Have to create own my own.)]
+2025-01-29T13:55:27.445+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-1] t.l.todo_app.services.TodoService        : Creating new todo: TodoDTO(id=null, title=Lunch, description=Have to create own my own.)
+2025-01-29T13:55:27.459+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(681748858<open>)] for JPA transaction
+2025-01-29T13:55:27.459+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-01-29T13:55:27.461+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@21a58da9]
+2025-01-29T13:55:27.478+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2025-01-29T13:55:27.478+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(681748858<open>)]
+2025-01-29T13:55:27.484+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2025-01-29T13:55:27.485+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-1] t.l.todo_app.services.TodoService        : Created todo: TodoDTO(id=1, title=Lunch, description=Have to create own my own.)
+2025-01-29T13:55:27.493+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-01-29T13:55:27.494+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [TodoDTO(id=1, title=Lunch, description=Have to create own my own.)]
+2025-01-29T13:55:27.499+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:55:27.500+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-01-29T13:55:29.141+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/todos", parameters={}
+2025-01-29T13:55:29.142+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.lucidrohit.todo_app.controllers.TodoController#getTodos()
+2025-01-29T13:55:29.144+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:55:29.146+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-3] t.l.todo_app.services.TodoService        : Fetching all todos
+2025-01-29T13:55:29.148+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(290754884<open>)] for JPA transaction
+2025-01-29T13:55:29.149+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-01-29T13:55:29.154+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Setting JDBC Connection [HikariProxyConnection@529759518 wrapping conn0: url=jdbc:h2:mem:edd1a8fd-2715-4e43-9732-bd9c6fb96796 user=SA] read-only
+2025-01-29T13:55:29.155+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1fd097d9]
+2025-01-29T13:55:29.230+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2025-01-29T13:55:29.230+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(290754884<open>)]
+2025-01-29T13:55:29.230+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Resetting read-only flag of JDBC Connection [HikariProxyConnection@529759518 wrapping conn0: url=jdbc:h2:mem:edd1a8fd-2715-4e43-9732-bd9c6fb96796 user=SA]
+2025-01-29T13:55:29.230+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2025-01-29T13:55:29.230+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-3] t.l.todo_app.services.TodoService        : Found 1 todos
+2025-01-29T13:55:29.232+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-01-29T13:55:29.232+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[TodoDTO(id=1, title=Lunch, description=Have to create own my own.)]]
+2025-01-29T13:55:29.233+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:55:29.233+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-01-29T13:57:28.336+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/todos", parameters={}
+2025-01-29T13:57:28.340+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to tech.lucidrohit.todo_app.controllers.TodoController#getTodos()
+2025-01-29T13:57:28.341+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:57:28.344+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-5] t.l.todo_app.services.TodoService        : Fetching all todos
+2025-01-29T13:57:28.350+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2076649282<open>)] for JPA transaction
+2025-01-29T13:57:28.351+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-01-29T13:57:28.353+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Setting JDBC Connection [HikariProxyConnection@1962985034 wrapping conn0: url=jdbc:h2:mem:edd1a8fd-2715-4e43-9732-bd9c6fb96796 user=SA] read-only
+2025-01-29T13:57:28.354+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@713f4c32]
+2025-01-29T13:57:28.367+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2025-01-29T13:57:28.368+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2076649282<open>)]
+2025-01-29T13:57:28.369+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Resetting read-only flag of JDBC Connection [HikariProxyConnection@1962985034 wrapping conn0: url=jdbc:h2:mem:edd1a8fd-2715-4e43-9732-bd9c6fb96796 user=SA]
+2025-01-29T13:57:28.369+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2025-01-29T13:57:28.370+05:30  INFO 42626 --- [todo-app] [http-nio-8080-exec-5] t.l.todo_app.services.TodoService        : Found 1 todos
+2025-01-29T13:57:28.371+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-01-29T13:57:28.372+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[TodoDTO(id=1, title=Lunch, description=Have to create own my own.)]]
+2025-01-29T13:57:28.379+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-01-29T13:57:28.388+05:30 DEBUG 42626 --- [todo-app] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-01-29T13:59:09.584+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-01-29T13:59:09.594+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37911f88, started on Wed Jan 29 13:55:10 IST 2025
+2025-01-29T13:59:09.606+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2025-01-29T13:59:09.606+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'applicationTaskExecutor' completed its stop procedure
+2025-01-29T13:59:09.606+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482623
+2025-01-29T13:59:09.610+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-01-29T13:59:09.610+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147481599
+2025-01-29T13:59:09.631+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2025-01-29T13:59:09.631+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147483647
+2025-01-29T13:59:09.631+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-01-29T13:59:09.632+05:30 DEBUG 42626 --- [todo-app] [SpringApplicationShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-01-29T13:59:09.633+05:30  INFO 42626 --- [todo-app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-29T13:59:09.645+05:30  INFO 42626 --- [todo-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-29T13:59:09.647+05:30  INFO 42626 --- [todo-app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
